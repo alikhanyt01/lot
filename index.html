@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lot Size Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Lot Size Calculator</h1>
+
+    <div class="input-group">
+      <label for="accountBalance">Account Balance ($):</label>
+      <input type="text" id="accountBalance" placeholder="e.g., 10,000">
+    </div>
+
+    <div class="input-group">
+      <label for="riskPercentage">Risk Percentage (%):</label>
+      <input type="number" id="riskPercentage" placeholder="e.g., 2">
+    </div>
+
+    <div class="input-group risk-display">
+      <label>Risk Amount:</label>
+      <span id="riskAmount">$0.00</span>
+    </div>
+
+    <div class="input-group">
+      <label for="stopLoss">Stop Loss (Pips):</label>
+      <input type="number" id="stopLoss" placeholder="e.g., 50">
+    </div>
+
+    <div class="input-group">
+      <label for="assetType">Asset Type:</label>
+      <select id="assetType">
+        <option value="commodities">Commodities</option>
+        <option value="forex">Forex Pairs</option>
+        <option value="indices">Indices</option>
+        <option value="crypto">Crypto</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="tradingPair">Select Pair:</label>
+      <select id="tradingPair"></select>
+    </div>
+
+    <button onclick="calculateLotSize()">Calculate Lot Size</button>
+    <div class="result">
+      <h2>Result:</h2>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
