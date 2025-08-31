@@ -1,134 +1,118 @@
 body {
-  font-family: 'Inter', sans-serif;
-  background: #0a1621;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  color: #f5f5f5;
-}
-
-/* Calculator Card */
-.calculator {
-  background: #141a24;
-  padding: 28px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-  width: 340px;
-  text-align: center;
-}
-
-/* Title */
-h1 {
-  font-size: 20px;
-  margin-bottom: 18px;
-  color: #5c9bf8;
-  font-weight: 600;
-}
-
-/* Risk Display */
-.risk-display {
-  font-size: 15px;
-  font-weight: 500;
-  padding: 12px;
-  border-radius: 8px;
-  background: #1c2635;
-  border: 1px solid #2a3b52;
-  text-align: center;
-  margin-bottom: 18px;
-}
-
-.risk-display span {
   color: #fff;
 }
 
-.risk-display label {
-  color: #5c9bf8;
-  font-size: 14px;
+.calculator {
+  background: #1e1e1e;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
 }
 
-/* Input Group */
+.risk-display {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
+  border: 1px solid #1c3f5f;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #5c9bf8;
+}
+
 .input-group {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   text-align: left;
   width: 100%;
 }
 
 label {
   display: block;
-  font-weight: 500;
-  margin-bottom: 6px;
-  font-size: 14px;
-  color: #cfd6e0;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 input, select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #2a3b52;
-  border-radius: 6px;
+  border: 1px solid #1c3f5f;
+  border-radius: 5px;
   font-size: 14px;
-  background: #0f1a28;
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
   color: #fff;
-  transition: border 0.3s ease;
 }
 
-input:focus, select:focus {
-  border-color: #5c9bf8;
-  outline: none;
-}
-
-/* Button */
 button {
   background: #5c9bf8;
   color: #fff;
-  font-weight: 600;
+  font-weight: bold;
   border: none;
   padding: 12px;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
   width: 100%;
-  font-size: 15px;
-  transition: background 0.3s ease;
+  font-size: 16px;
 }
 
 button:hover {
-  background: #3e6fb3;
+  background: #31568c;
 }
 
-/* Result Box */
 .result {
-  margin-top: 18px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #00ff88;
-  background: #1c2635;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #2a3b52;
-  text-align: center;
-}
-
-.result p {
-  margin: 0;
-  color: #e0e0e0;
-  font-size: 14px;
-}
-
-.result h2 {
-  margin: 5px 0 0;
-  color: #5c9bf8;
+  margin-top: 20px;
   font-size: 18px;
+  font-weight: bold;
+  color: #00ff88;
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #1c3f5f;
 }
 
-/* Dropdown */
 select {
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
+  color: #fff;
+  border: 1px solid #00d4ff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
   appearance: none;
-  cursor: pointer;
 }
 
 select option {
-  background: #141a24;
+  background: #1c3f5f;
+  color: white;
+}
+
+.risk-display span{
   color: #fff;
+}
+
+.result p {
+  color: white;
+}
+
+.risk-display label {
+  color: #5c9bf8;
+}
+
+.result h2 {
+  color: #5c9bf8;
 }
