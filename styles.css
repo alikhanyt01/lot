@@ -1,6 +1,6 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,150 +9,110 @@ body {
   color: #fff;
 }
 
-/* Calculator Container */
 .calculator {
-  background: rgba(30, 30, 30, 0.8);
-  backdrop-filter: blur(12px);
+  background: #1e1e1e;
   margin-top: 50px;
   padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  width: 380px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.calculator:hover {
-  transform: translateY(-5px);
-}
-
-/* Heading */
-h1 {
-  font-size: 24px;
-  margin-bottom: 25px;
-  color: #5c9bf8;
-  letter-spacing: 1px;
-  text-shadow: 0 0 8px rgba(92, 155, 248, 0.6);
-}
-
-/* Risk Display */
-.risk-display {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 12px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #203a43, #0f2027);
-  border: 1px solid #5c9bf8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+.risk-display {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
+  border: 1px solid #1c3f5f;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
   margin-bottom: 20px;
-  box-shadow: inset 0 0 10px rgba(92, 155, 248, 0.3);
-  animation: pulse 2s infinite;
-}
-
-.risk-display span {
-  color: #fff;
-}
-
-.risk-display label {
   color: #5c9bf8;
 }
 
-/* Input Groups */
 .input-group {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   text-align: left;
   width: 100%;
 }
 
 label {
   display: block;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #cfd9e5;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 input, select {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #5c9bf8;
-  border-radius: 8px;
-  font-size: 15px;
-  background: rgba(28, 63, 95, 0.8);
+  padding: 10px;
+  border: 1px solid #1c3f5f;
+  border-radius: 5px;
+  font-size: 14px;
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
   color: #fff;
-  transition: all 0.3s ease-in-out;
 }
 
-input:focus, select:focus {
-  border-color: #00d4ff;
-  outline: none;
-  box-shadow: 0 0 12px rgba(0, 212, 255, 0.5);
+button {
+  background: #5c9bf8;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #31568c;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ff88;
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #1c3f5f;
 }
 
 select {
+  background: linear-gradient(to right, #1c3f5f, #0a1621);
+  color: #fff;
+  border: 1px solid #00d4ff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
   appearance: none;
-  cursor: pointer;
 }
 
 select option {
   background: #1c3f5f;
+  color: white;
+}
+
+.risk-display span{
   color: #fff;
-}
-
-/* Button */
-button {
-  background: linear-gradient(135deg, #5c9bf8, #31568c);
-  color: #fff;
-  font-weight: 700;
-  border: none;
-  padding: 14px;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 100%;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease-in-out;
-}
-
-button:hover {
-  background: linear-gradient(135deg, #6faafc, #3c6cb1);
-  box-shadow: 0 6px 20px rgba(92, 155, 248, 0.4);
-  transform: scale(1.03);
-}
-
-/* Result */
-.result {
-  margin-top: 25px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #00ff88;
-  background: rgba(28, 63, 95, 0.6);
-  padding: 12px;
-  border-radius: 10px;
-  border: 1px solid #00ff88;
-  box-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
-  animation: glow 2s infinite alternate;
 }
 
 .result p {
-  color: #fff;
+  color: white;
+}
+
+.risk-display label {
+  color: #5c9bf8;
 }
 
 .result h2 {
   color: #5c9bf8;
-  text-shadow: 0 0 6px rgba(92, 155, 248, 0.6);
-}
-
-/* Animations */
-@keyframes glow {
-  from {
-    box-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
-  }
-  to {
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
-  }
-}
-
-@keyframes pulse {
-  0% { box-shadow: inset 0 0 10px rgba(92, 155, 248, 0.3); }
-  50% { box-shadow: inset 0 0 20px rgba(92, 155, 248, 0.6); }
-  100% { box-shadow: inset 0 0 10px rgba(92, 155, 248, 0.3); }
 }
