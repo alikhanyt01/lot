@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   riskDisplay.style.boxSizing = "border-box";
 
   const logoImg = document.createElement("img");
-  logoImg.src = "https://imgbb.com/"><img src="https://i.ibb.co/BKsbsdDd/White-Green-Navy-Modern-Minimalist-Bull-Investment-Logo-2.png"; // Update with actual logo path
+  logoImg.src = "https://assets.onecompiler.app/43ac9brbf/43ac9cbyd/skill-centric-png-logo-1024x224.png"; // Update with actual logo path
   logoImg.alt = "Ali Khan FX";
   logoImg.style.width = "200px";
   logoImg.style.margin = "0 auto 20px auto";
@@ -128,4 +128,3 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("resultText").innerText = `Lot Size: ${lotSize}`;
   };
 });
-
