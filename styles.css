@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   background: linear-gradient(to right, #1c3f5f, #0a1621);
   display: flex;
   justify-content: center;
@@ -116,3 +116,4 @@ select option {
 .result h2 {
   color: #5c9bf8;
 }
+
